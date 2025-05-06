@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arsi University Job Portal - README</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2, h3 {
+      color: #002f66;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-top: 2rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    code, pre {
+      background-color: #e5e7eb;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #FF6600;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .box {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+    a {
+      color: #FF6600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎓 Arsi University Job Portal <span class="tag">Laravel + Tailwind</span></h1>
+
+  <p>A modern web platform connecting <strong>jobseekers</strong>, <strong>employers</strong>, and <strong>admins</strong> at Arsi University. Built with ❤️ using Laravel and Tailwind CSS.</p>
+
+  <div class="section">
+    <h2>🚀 Features Overview</h2>
+
+    <div class="box">
+      <h3>🧑‍💼 Jobseekers</h3>
+      <ul>
+        <li><strong>🔍 Browse Jobs</strong> – Filter by title, category, location, date</li>
+        <li><strong>💾 Save Jobs</strong> – Bookmark for later</li>
+        <li><strong>📨 Apply</strong> – Apply once per job, no duplicates</li>
+        <li><strong>📝 Resume Builder</strong> – Fillable, editable, PDF-ready</li>
+        <li><strong>🔔 Notifications</strong> – Track job updates, applications</li>
+        <li><strong>📢 Announcements</strong> – Get news from the university</li>
+        <li><strong>👤 Dashboard</strong> – Personalized, clean, responsive</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>🏢 Employers</h3>
+      <ul>
+        <li><strong>📄 Post Jobs</strong> – Describe, tag, and submit jobs (pending until approved)</li>
+        <li><strong>🗂 Manage Jobs</strong> – Edit, delete, or check applications</li>
+        <li><strong>📥 Applications</strong> – View applicants and resumes</li>
+        <li><strong>👤 Dashboard</strong> – Track jobs and performance</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>🛠️ Admin</h3>
+      <ul>
+        <li><strong>📢 Manage Announcements</strong> – Add or edit university news</li>
+        <li><strong>📊 Site Analytics</strong> – Users, jobs, applications</li>
+        <li><strong>👥 Manage Users</strong> – Role view, delete access</li>
+        <li><strong>📌 Manage Jobs</strong> – Approve, reject, or remove jobs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧱 Tech Stack</h2>
+    <ul>
+      <li><strong>Laravel 10</strong> – Back-end framework</li>
+      <li><strong>Tailwind CSS</strong> – Front-end utility-first styling</li>
+      <li><strong>Blade Templates</strong> – For dynamic pages</li>
+      <li><strong>MySQL</strong> – Data storage</li>
+      <li><strong>Authentication</strong> – Laravel Breeze for login/register</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📁 Folder Structure</h2>
+    <pre>
+├── app/Http/Controllers/
+│   ├── JobController.php
+│   ├── ApplicationController.php
+│   ├── ResumeController.php
+│   └── AdminController.php
+├── resources/views/
+│   ├── jobseeker/dashboard.blade.php
+│   ├── employer/dashboard.blade.php
+│   ├── admin/dashboard.blade.php
+├── routes/web.php
+├── public/
+└── database/migrations/
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>🧪 Validation & Security</h2>
+    <ul>
+      <li>✅ CSRF Protection</li>
+      <li>✅ Confirm dialogs before deletes</li>
+      <li>✅ Form validation and error feedback</li>
+      <li>✅ Role-based route guarding</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎨 Design System</h2>
+    <ul>
+      <li><strong>Primary Color:</strong> <span style="color:#002f66;">#002f66</span></li>
+      <li><strong>Accent Color:</strong> <span style="color:#FF6600;">#FF6600</span></li>
+      <li><strong>Font:</strong> <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a></li>
+      <li><strong>Icons:</strong> Emojis for clarity</li>
+      <li><strong>Responsive:</strong> Mobile-first layouts</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>✅ Future Roadmap</h2>
+    <ul>
+      <li>📄 Resume PDF Export</li>
+      <li>📆 Job Expiry/Archiving</li>
+      <li>✅ Verified Employers</li>
+      <li>📲 Rich Notification Panel</li>
+      <li>🔒 Role-based Policies</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📎 Setup Instructions</h2>
+    <pre>
+git clone https://github.com/antishman/arsijobportal.git
+cd arsi-job-portal
+
+composer install
+npm install && npm run dev
+
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+
+php artisan serve
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>📬 Contact</h2>
+    <p>Have questions or want to contribute?</p>
+    <ul>
+      <li><strong>Telegram:</strong> +251222380252</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/antishman/arsi-job-portal" target="_blank">antishman/arsi-job-portal</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>✨ Designed and developed for Arsi University with Laravel + Tailwind CSS. ✨</p>
+  </footer>
+
+</body>
+</html>
